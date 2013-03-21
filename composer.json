@@ -1,0 +1,13 @@
+{
+    "name": "robloach/component-installer-example",
+    "license": "MIT",
+    "description": "An example of using Component Installer.",
+    "require": {
+        "components/jquery": "*"
+    },
+    "config": {
+        "component-dir": "public/components",
+        "component-baseurl": "../"
+    },
+    "minimum-stability": "dev"
+}
