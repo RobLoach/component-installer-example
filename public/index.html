@@ -1,15 +1,49 @@
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>jQuery+RequireJS Component Installer Sample</title>
-        <script src="components/require.js"></script>
-    </head>
-    <body>
-        <h1>jQuery+RequireJS Component Installer Sample Page</h1>
-        <script>
-          require(['jquery'], function($) {
-            $('body').css('background-color', 'green');
-          });
-        </script>
-    </body>
+<html lang="en">
+  <head>
+    <title>Component Installer</title>
+
+    <!-- Le styles -->
+    <link href="components/require.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <h1>Component Installer Test</h1>
+      <p><i class="icon-ok"></i> This is an example of using <a href="http://robloach.github.com/component-installer">Component Installer</a> with jQuery and Bootstrap. View the source for more information.</p>
+
+      <!-- Button to trigger modal -->
+      <a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
+
+      <!-- Modal -->
+      <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></button>
+          <h3 id="myModalLabel">Modal header</h3>
+        </div>
+        <div class="modal-body">
+          <p>This is the modal body. It's pretty fine...</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Le JavaScript -->
+    <script src="components/require.js"></script>
+
+    <script>
+      // Load jQuery and Twitter Bootstrap.
+      require(["jquery", "bootstrap"], function($) {
+        // Change the text color to green, because why not.
+        $('p').css('color', 'green');
+      });
+    </script>
+
+  </body>
 </html>

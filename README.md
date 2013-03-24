@@ -1,8 +1,9 @@
 Component Installer Example
 ===========================
 
-An example of using [Component Installer](http://robloach.github.com/component-installer).
-This makes use of jQuery through Component Installer's [RequireJS](http://requirejs.org) configuration.
+An example of using [Component Installer](http://robloach.github.com/component-installer)
+with jQuery and Twitter Bootstrap. This makes use of the generated
+[RequireJS](http://requirejs.org) configuration.
 
 Usage
 -----
@@ -14,4 +15,7 @@ Usage
 
 2. Load `public/index.html` in your favourite web browser
 
-3. If the background is green, then jQuery is loaded properly through RequireJS.
+3. If the text is green, then jQuery is loaded properly through RequireJS.
+
+4. If clicking on "Launch demo modal" pops up a modal window, then Bootstrap is
+   working correctly through RequireJS.

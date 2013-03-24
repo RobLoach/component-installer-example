@@ -3,11 +3,11 @@
     "license": "MIT",
     "description": "An example of using Component Installer.",
     "require": {
-        "components/jquery": "*"
+        "components/bootstrap": "*"
     },
     "config": {
         "component-dir": "public/components",
-        "component-baseurl": "../"
+        "component-baseurl": "components"
     },
     "minimum-stability": "dev"
 }
