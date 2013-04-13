@@ -8,6 +8,5 @@
     "config": {
         "component-dir": "public/components",
         "component-baseurl": "components"
-    },
-    "minimum-stability": "dev"
+    }
 }
