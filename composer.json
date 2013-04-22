@@ -4,9 +4,5 @@
     "description": "An example of using Component Installer.",
     "require": {
         "components/bootstrap": "*"
-    },
-    "config": {
-        "component-dir": "public/components",
-        "component-baseurl": "components"
     }
 }
