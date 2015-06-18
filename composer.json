@@ -3,6 +3,8 @@
     "license": "MIT",
     "description": "An example of using Component Installer.",
     "require": {
-        "components/bootstrap": "*"
+        "robloach/component-installer": "*",
+        "components/bootstrap": "3.3.5",
+        "components/bootstrap-default": "3.3.5"
     }
 }

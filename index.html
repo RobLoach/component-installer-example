@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Component Installer</title>
 
-    <!-- Le styles -->
+    <!-- Styles -->
     <link href="components/require.css" rel="stylesheet">
   </head>
 
@@ -12,29 +11,47 @@
 
     <div class="container">
 
-      <h1>Component Installer Test</h1>
-      <p><i class="icon-ok"></i> This is an example of using <a href="http://robloach.github.com/component-installer">Component Installer</a> with jQuery and Bootstrap. View the source for more information.</p>
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Component Installer Example</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
 
-      <!-- Button to trigger modal -->
-      <a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
-
-      <!-- Modal -->
-      <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></button>
-          <h3 id="myModalLabel">Modal header</h3>
-        </div>
-        <div class="modal-body">
-          <p>This is the modal body. It's pretty fine...</p>
-        </div>
-        <div class="modal-footer">
-          <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-        </div>
+      <div class="jumbotron">
+      	<h1>Component Installer Test</h1>
+      	<p><i class="icon-ok"></i> This is an example of using <a href="http://robloach.github.com/component-installer">Component Installer</a> with jQuery and Bootstrap. This text should be green. View the source for more information.</p>
       </div>
 
-    </div>
 
-    <!-- Le JavaScript -->
+    <!-- Load the JavaScript -->
     <script src="components/require.js"></script>
 
     <script>
@@ -42,6 +59,12 @@
       require(["jquery", "bootstrap"], function($) {
         // Change the text color to green, because why not.
         $('p').css('color', 'green');
+
+        $('h1').popover({
+        	title: "Hello World!",
+        	placement: "bottom",
+        	trigger: "hover"
+        });
       });
     </script>
 
